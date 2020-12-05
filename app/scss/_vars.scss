@@ -1,0 +1,36 @@
+$color-white: #ffffff;
+$color-gray: #EAE4E4;
+$color-violet-light: #D775FF;
+$color-violet-light2: #CE68F8;
+$color-violet: #A21ED8;
+$color-violet-med: #6D0099;
+$color-violet-dark: #520F6E;
+$color-light-black: #030303;
+$color-black: #000000;
+
+$palette-primary: $color-white;
+$palette-secondary: $color-black;
+$palette-hover: $color-violet;
+$palette-bg: $color-violet;
+$palette-btn-active: $color-violet;
+$palette-btn-not-active: $color-violet-dark;
+$palette-text: $color-violet-light;
+$palette-text-jury: $color-violet;
+$palette-years: $color-gray;
+$palette-year-hover: $color-violet-med;
+$palette-year-bg: $color-violet-light2;
+
+%manrope-medium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+%manrope-semi-bold {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+%manrope-bold {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}

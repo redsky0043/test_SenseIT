@@ -1,0 +1,69 @@
+@import "vars";
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: $palette-primary;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: $color-black;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+input {
+    outline: none;
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
