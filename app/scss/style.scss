@@ -147,6 +147,7 @@
 
     &__description {
         padding: 0 0 0 60px;
+        position: relative;
     }
 
     &__title {
@@ -208,6 +209,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99;
 
     &:hover {
         background-color: $palette-primary;
@@ -225,6 +227,7 @@
     padding: 0 25px 0 30px;
     color: $palette-primary;
     background-color: $palette-btn-active;
+    // z-index: 999 !important;
 
     &__svg {
         width: 39px;
@@ -347,7 +350,7 @@
             right: 1px;
             top: 175px;
         }
-
+        
         &:nth-child(5) {
             opacity: 0.6;
             width: 30px;
@@ -359,7 +362,7 @@
         &:nth-child(6) {
             opacity: 0.35;
             width: 184px;
-            height: 10px;
+            height: 40px;
             left: 90px;
             top: 660px;
         }
@@ -403,9 +406,27 @@
 }
 
 .second_pixel {
-    width: 81px;
-    height: 40px;
+    width: 81px !important;
+    transform: translateX(28px);
 }
+
+.third_pixel {
+    width: 37px !important;
+    transform: translateX(-99px);
+}
+
+.fourth_pixel {
+    width: 45px !important;
+    transform: translateX(-525px);
+}
+
+.fifth_pixel {
+    transform: translateX(-30px);
+}
+
+// .fifth_pixel {
+//     transform: translateX(-30px);
+// }
 
 .jury {
     margin-top: 110px;
