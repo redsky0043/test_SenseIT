@@ -26,6 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     &__logo {
@@ -129,7 +130,7 @@
         height: 100%;
         width: 65%;
         position: relative;
-        z-index: 2;
+        // z-index: 2;
         background: linear-gradient(161.59deg, #0f0935 7.13%, #000000 87.92%);
 
         &::before {
@@ -147,7 +148,6 @@
 
     &__description {
         padding: 0 0 0 60px;
-        position: relative;
     }
 
     &__title {
@@ -313,91 +313,90 @@
     }
 }
 
-.main {
-    &__pixel {
-        z-index: 3;
-        background-color: #a21ed8;
-        position: absolute;
-        transition: all 0.3s ease;
+.main__pixel {
+    z-index: 3;
+    background-color: $palette-bg;
+    position: absolute;
+    transition: all 0.3s ease;
 
-        &:nth-child(1) {
-            opacity: 0.35;
-            width: 20px;
-            height: 62px;
-            top: 194px;
-        }
+    &:nth-child(1) {
+        opacity: 0.35;
+        width: 20px;
+        height: 62px;
+        left: 0;
+        top: 194px;
+    }
 
-        &:nth-child(2) {
-            opacity: 0.3;
-            width: 120px;
-            height: 40px;
-            right: 31.5%;
-            top: 240px;
-        }
+    &:nth-child(2) {
+        opacity: 0.3;
+        width: 120px;
+        height: 40px;
+        right: 31.5%;
+        top: 240px;
+    }
 
-        &:nth-child(3) {
-            opacity: 0.7;
-            width: 60px;
-            height: 20px;
-            right: 0;
-            top: 160px;
-        }
+    &:nth-child(3) {
+        opacity: 0.7;
+        width: 60px;
+        height: 20px;
+        right: 0;
+        top: 160px;
+    }
 
-        &:nth-child(4) {
-            opacity: 0.45;
-            width: 119px;
-            height: 10px;
-            right: 1px;
-            top: 175px;
-        }
-        
-        &:nth-child(5) {
-            opacity: 0.6;
-            width: 30px;
-            height: 11px;
-            left: 0px;
-            top: 527px;
-        }
+    &:nth-child(4) {
+        opacity: 0.45;
+        width: 119px;
+        height: 10px;
+        right: 1px;
+        top: 175px;
+    }
 
-        &:nth-child(6) {
-            opacity: 0.35;
-            width: 184px;
-            height: 40px;
-            left: 90px;
-            top: 660px;
-        }
+    &:nth-child(5) {
+        opacity: 0.6;
+        width: 30px;
+        height: 11px;
+        left: 0px;
+        top: 527px;
+    }
 
-        &:nth-child(7) {
-            opacity: 0.55;
-            width: 60px;
-            height: 5px;
-            left: 300px;
-            top: 751px;
-        }
+    &:nth-child(6) {
+        opacity: 0.35;
+        width: 184px;
+        height: 40px;
+        left: 90px;
+        top: 660px;
+    }
 
-        &:nth-child(8) {
-            opacity: 0.3;
-            width: 180px;
-            height: 10px;
-            left: 551px;
-            top: 741px;
-        }
+    &:nth-child(7) {
+        opacity: 0.55;
+        width: 60px;
+        height: 5px;
+        left: 300px;
+        top: 751px;
+    }
 
-        &:nth-child(9) {
-            opacity: 0.7;
-            width: 120px;
-            height: 20px;
-            right: 31%;
-            top: 771px;
-        }
+    &:nth-child(8) {
+        opacity: 0.3;
+        width: 180px;
+        height: 10px;
+        left: 551px;
+        top: 741px;
+    }
 
-        &:nth-child(10) {
-            opacity: 0.45;
-            width: 60px;
-            height: 20px;
-            right: 0;
-            top: 740px;
-        }
+    &:nth-child(9) {
+        opacity: 0.7;
+        width: 120px;
+        height: 20px;
+        right: 31%;
+        top: 771px;
+    }
+
+    &:nth-child(10) {
+        opacity: 0.45;
+        width: 60px;
+        height: 20px;
+        right: 0;
+        top: 740px;
     }
 }
 
@@ -424,9 +423,9 @@
     transform: translateX(-30px);
 }
 
-// .fifth_pixel {
-//     transform: translateX(-30px);
-// }
+.seventh_pixel {
+    transform: translateX(-30px);
+}
 
 .jury {
     margin-top: 110px;
@@ -532,7 +531,7 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 90px;
+        padding-bottom: 90px; // have a problem !!!!!!
         position: relative;
         transition: all 0.3s ease;
 
