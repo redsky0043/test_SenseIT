@@ -1,0 +1,193 @@
+@import "vars";
+
+.main__pixels {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.main__pixel {
+    background-color: $palette-bg;
+    position: absolute;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+        opacity: 0.35;
+        width: 20px;
+        height: 62px;
+        left: 0;
+        top: 194px;
+    }
+
+    &:nth-child(2) {
+        opacity: 0.3;
+        width: 120px;
+        height: 40px;
+        right: 31.5%;
+        top: 240px;
+    }
+
+    &:nth-child(3) {
+        opacity: 0.7;
+        width: 60px;
+        height: 20px;
+        right: 0;
+        top: 160px;
+    }
+
+    &:nth-child(4) {
+        opacity: 0.45;
+        width: 119px;
+        height: 10px;
+        right: 1px;
+        top: 175px;
+    }
+
+    &:nth-child(5) {
+        opacity: 0.6;
+        width: 30px;
+        height: 11px;
+        left: 0px;
+        top: 527px;
+    }
+
+    &:nth-child(6) {
+        opacity: 0.35;
+        width: 184px;
+        height: 40px;
+        left: 90px;
+        top: 660px;
+    }
+
+    &:nth-child(7) {
+        opacity: 0.55;
+        width: 60px;
+        height: 5px;
+        left: 300px;
+        top: 751px;
+    }
+
+    &:nth-child(8) {
+        opacity: 0.3;
+        width: 80px;
+        height: 15px;
+        left: 340px;
+        top: 672px;
+    }
+
+    &:nth-child(9) {
+        opacity: 0.3;
+        width: 180px;
+        height: 10px;
+        left: 551px;
+        top: 741px;
+    }
+
+    &:nth-child(10) {
+        opacity: 0.7;
+        width: 120px;
+        height: 20px;
+        right: 31%;
+        top: 771px;
+    }
+
+    &:nth-child(11) {
+        opacity: 0.45;
+        width: 60px;
+        height: 20px;
+        right: 0;
+        top: 740px;
+    }
+}
+
+// rules for "apply" button
+
+.first_pixel {
+    transform: translateX(-20px);
+}
+
+.second_pixel {
+    width: 81px !important;
+    transform: translateX(28px);
+}
+
+.third_pixel {
+    width: 37px !important;
+    transform: translateX(-99px);
+}
+
+.fourth_pixel {
+    width: 45px !important;
+    transform: translateX(-525px);
+}
+
+.fifth_pixel {
+    transform: translateX(-30px);
+}
+
+.sixth_pixel {
+    width: 100px !important;
+    transform: translateX(244px);
+}
+
+.seventh_pixel {
+    width: 80px !important;
+    transform: translateX(-210px);
+}
+
+.eighth_pixel {
+    transform: translateX(211px);
+}
+
+.nineth_pixel {
+    width: 60px !important;
+    transform: translateX(160px);
+}
+
+.tenth_pixel {
+    transform: translateX(-260px);
+}
+
+// rules for "jury" button
+
+.first_pixel_2 {
+    transform: translateX(-20px);
+}
+
+.second_pixel_2 {
+    transform: translateX(680px);
+}
+
+.third_pixel_2 {
+    width: 76px !important;
+    transform: translateX(-524px);
+}
+
+.fourth_pixel_2 {
+    transform: translateX(-450px);
+}
+
+.fifth_pixel_2 {
+    transform: translateX(-30px);
+}
+
+.eighth_pixel_2 {
+    width: 60px !important;
+    transform: translateX(331px);
+}
+
+.nineth_pixel_2 {
+    width: 130px !important;
+    transform: translateX(-50px);
+}
+
+.tenth_pixel_2 {
+    width: 90px !important;
+    transform: translateX(330px);
+}
+
+.eleventh_pixel_2 {
+    width: 60px !important;
+    transform: translateX(-330px);
+}

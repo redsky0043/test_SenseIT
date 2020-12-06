@@ -1,0 +1,123 @@
+@import "vars";
+
+.bottom__pixels {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.bottom__pixel {
+    background-color: $palette-bg;
+    position: absolute;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+        opacity: 0.6;
+        width: 120px;
+        height: 10px;
+        left: 60px;
+        bottom: 0px;
+    }
+
+    &:nth-child(2) {
+        width: 60px;
+        height: 10px;
+        left: 180px;
+        bottom: -10px;
+    }
+
+    &:nth-child(3) {
+        opacity: 0.7;
+        width: 60px;
+        height: 10px;
+        left: 480px;
+        bottom: 0px;
+    }
+
+    &:nth-child(4) {
+        opacity: 0.4;
+        width: 60px;
+        height: 10px;
+        left: 540px;
+        bottom: 10px;
+    }
+
+    &:nth-child(5) {
+        width: 120px;
+        height: 10px;
+        right: 420px;
+        bottom: -10px;
+    }
+
+    &:nth-child(6) {
+        background-color: $palette-pixel;
+        width: 120px;
+        height: 10px;
+        right: 180px;
+        bottom: -10px;
+    }
+
+    &:nth-child(7) {
+        opacity: 0.7;
+        width: 183px;
+        height: 30px;
+        right: 256px;
+        bottom: -20px;
+    }
+}
+
+// rules for "apply" button
+
+.twelfth_pixel {
+    transform: translateX(180px);
+}
+
+.fourteenth_pixel {
+    width: 30px !important;
+    transform: translateX(60px);
+}
+
+.fifteenth_pixel {
+    transform: translateX(-100px);
+}
+
+.sixteenth_pixel {
+    transform: translateX(90px);
+}
+
+.eighteenth_pixel {
+    width: 80px !important;
+    transform: translateX(-160px);
+}
+
+// rules for "jury" button
+
+.twelfth_pixel_2 {
+    width: 30px !important;
+    transform: translateX(359px);
+}
+
+.thirteenth_pixel_2 {
+    width: 40px !important;
+    transform: translateX(390px);
+}
+
+.fourteenth_pixel_2 {
+    width: 113px !important;
+    transform: translateX(-191px);
+}
+
+.fifteenth_pixel_2 {
+    width: 60px !important;
+    transform: translateX(-300px);
+}
+
+.sixteenth_pixel_2 {
+    transform: translateX(129px);
+}
+
+.eighteenth_pixel_2 {
+    transform: translateX(189px);
+    z-index: -1;
+}
