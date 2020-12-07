@@ -1,11 +1,12 @@
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify-es').default,
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
+    imagemin = require('gulp-imagemin');
 
 
 gulp.task('clean', async function(){
@@ -16,7 +17,7 @@ gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
-      browsers: ['last 8 versions']
+      overrideBrowserslist: ['last 8 versions']
     }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
@@ -45,7 +46,8 @@ gulp.task('script', function(){
 
 gulp.task('js', function(){
   return gulp.src([
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'app/js/*.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -60,6 +62,12 @@ gulp.task('browser-sync', function() {
       }
   });
 });
+
+gulp.task('imagemin', function() {
+  return gulp.src('app/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'))
+})
 
 gulp.task('export', function(){
   let buildHtml = gulp.src('app/**/*.html')
@@ -84,6 +92,6 @@ gulp.task('watch', function(){
   gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('build', gulp.series('clean', 'export'))
+gulp.task('build', gulp.series('clean', 'imagemin', 'export'))
 
 gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));
