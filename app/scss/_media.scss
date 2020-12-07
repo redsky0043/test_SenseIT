@@ -1,3 +1,81 @@
+@media (max-width: 1550px) {
+    .jury__item:nth-child(10n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 1365px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(9n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 1235px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(8n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(7n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 970px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(6n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(5n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 707px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(4n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(3n) .jury__info {
+        right: 0;
+    }
+}
+
+@media (max-width: 445px) {
+    .jury__item:nth-child(n) .jury__info {
+        right: auto;
+    }
+    .jury__item:nth-child(2n) .jury__info {
+        right: 0;
+    }
+}
+
 @media (max-width: 1255px) {
     .header {
         &__menu {
@@ -19,6 +97,10 @@
 
     .content__wrapper {
         width: 100%;
+
+        &:before {
+            display: none;
+        }
     }
 }
 
@@ -50,7 +132,7 @@
         flex-direction: column;
     }
 
-    .btn--application {
+    .btn--apply {
         margin-bottom: 20px;
     }
 }
@@ -101,7 +183,7 @@
 
 @media (max-width: 420px) {
     .content__wrapper:before {
-        height: 0;
+        display: none;
     }
     .content__title {
         margin-top: 120px;
@@ -123,7 +205,7 @@
         text-align: center;
 
         &:before, &:after {
-            height: 0;
+            display: none;
         }
 
         &__items {

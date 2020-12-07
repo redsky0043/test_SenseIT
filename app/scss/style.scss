@@ -164,7 +164,7 @@
     }
 }
 
-.opened {
+.header__menu-mob--opened {
     background-color: black;
     padding: 40px 60px;
     position: fixed;
@@ -328,7 +328,7 @@
     }
 }
 
-.btn--application {
+.btn--apply {
     width: 360px;
     height: 80px;
     font-size: 26px;
@@ -648,6 +648,10 @@
 .years-item--active {
     background: $palette-year-bg;
     color: $palette-year-hover;
+}
+
+.body_overflow--hidden {
+    overflow: hidden;
 }
 
 @import "media";

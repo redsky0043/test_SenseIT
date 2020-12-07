@@ -1,9 +1,9 @@
 const openMenuBtn = document.querySelector('.header__btn');
-// const mobileMenu = document.querySelector('.header__menu');
-const mobileMenu = document.querySelector('.header');
+const header = document.querySelector('.header');
+const body = document.querySelector('body');
 
 openMenuBtn.addEventListener('click', () => {
     openMenuBtn.classList.toggle('header__btn-closed');
-    // mobileMenu.classList.toggle('mob-menu--opened')
-    mobileMenu.classList.toggle('opened')
+    header.classList.toggle('header__menu-mob--opened');
+    body.classList.toggle('body_overflow--hidden');
 })
