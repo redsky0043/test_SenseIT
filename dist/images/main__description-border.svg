@@ -1,1 +1,14 @@
-<svg width="40" height="840" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="840"><path fill="#C4C4C4" d="M0 0h40v840H0z"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M-870 0H30.5v100h-10v50H11v50.5h29v20H11V260h14v100h15v100H25v100H11v60h29v100H11v40h14v20H11v60h-881V0z" fill="url(#paint0_linear)"/></g><defs><linearGradient id="paint0_linear" x1="-654" y1="13.5" x2="-400" y2="840" gradientUnits="userSpaceOnUse"><stop stop-color="#0F0935"/><stop offset="1"/></linearGradient></defs></svg>
+<svg width="40" height="840" viewBox="0 0 40 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="840">
+<rect width="40" height="840" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-870 0H10.5H11H30.5V100H20.5V150H11V200.5H40V220.5H11V260H25V360H40V460H25V560H11V620H40V720H11V760H25V780H11V840H-870V0Z" fill="url(#paint0_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="-654" y1="13.5" x2="-400" y2="840" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0F0935"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>
